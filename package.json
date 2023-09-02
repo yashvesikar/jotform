@@ -1,5 +1,5 @@
 {
-  "name": "@wojtekmaj/jotform",
+  "name": "jotform",
   "version": "0.2.0",
   "description": "Jotform API Node.js Client",
   "type": "module",
@@ -59,10 +59,4 @@
     "dist",
     "src"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wojtekmaj/jotform.git"
-  },
-  "funding": "https://github.com/wojtekmaj/jotform?sponsor=1",
-  "packageManager": "yarn@3.6.0"
 }
