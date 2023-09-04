@@ -13,15 +13,15 @@
     "require": "./dist/cjs/index.js"
   },
   "scripts": {
-    "build": "yarn build-esm && yarn build-cjs && yarn build-cjs-package",
+    "build": "npm run build-esm && npm run build-cjs && npm run build-cjs-package",
     "build-esm": "tsc --project tsconfig.build.json --outDir dist/esm --module esnext",
     "build-cjs": "tsc --project tsconfig.build.json --outDir dist/cjs --module commonjs",
     "build-cjs-package": "echo '{\n  \"type\": \"commonjs\"\n}' > dist/cjs/package.json",
     "clean": "rimraf dist",
     "lint": "eslint .",
-    "prepack": "yarn clean && yarn build",
+    "prepack": "npm run clean && npm run build",
     "prettier": "prettier --check . --cache",
-    "test": "yarn lint && yarn tsc && yarn prettier && yarn unit",
+    "test": "npm run lint && npm run tsc && npm run prettier && npm run unit",
     "tsc": "tsc --noEmit",
     "unit": "vitest"
   },
